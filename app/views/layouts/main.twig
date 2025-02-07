@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradition Sucrée - Gâteaux Marocains Authentiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#BE8E5C',
+                        secondary: '#594D46',
+                        accent: '#EAD7C7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-accent/10">
+    {% include 'partials/header.twig' %}
+
+    {% block content %}{% endblock %}
+
+    {% include 'partials/footer.twig' %}
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>
